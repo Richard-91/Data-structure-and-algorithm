@@ -1,9 +1,7 @@
 package detector;
 
-import sort.BubbleSort;
-import sort.InsertSort;
-import sort.MergeSort;
-import sort.SelectSort;
+
+import sort.*;
 
 import java.util.Arrays;
 
@@ -24,6 +22,8 @@ public class Detector {
                 InsertSort.insertSort(arr1);
             }else if(s.equals("mergeSort")){
                 MergeSort.mergeSort(arr1);
+            }else if(s.equals("quickSort2")){
+                QuickSort.quickSort2(arr1);
             }
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
