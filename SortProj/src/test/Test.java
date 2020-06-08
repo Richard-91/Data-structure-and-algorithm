@@ -5,7 +5,7 @@ import detector.Detector;
 import sort.InsertSort;
 
 public class Test {
-    private static String sort = "insertSort";
+    private static String sort = "mergeSort";
     public static void main(String[] args) {
         if(Detector.detector(sort)){
             System.out.println(sort+"测试通过");
