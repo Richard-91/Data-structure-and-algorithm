@@ -1,7 +1,7 @@
 package sort;
 
 public class QuickSort {
-    //快速排序第一版，算法复杂度有可能O(N²)
+    //快速排序第一版，算法复杂度为O(N*logN) ~ O(N²)
     public static void quickSort1(int[] arr){
         if(arr == null || arr.length < 2) {
             return;
@@ -19,7 +19,7 @@ public class QuickSort {
         process1(arr, mid+1, R);
     }
 
-    public static int partition1(int[] arr, int L, int R){
+    public static int partition1(int[] arr, int L, int R){ //O(N)
         int p=arr[L];
         int i=L;
         int j=R;
@@ -62,7 +62,7 @@ public class QuickSort {
     }
 
     //以arr[R]为划分值
-    public static int[] partition2_netherlandsFlag(int[] arr, int L, int R){
+    public static int[] partition2_netherlandsFlag(int[] arr, int L, int R){ //O(N)
         if(L > R) {
             return new int[]{-1, -1};
         }

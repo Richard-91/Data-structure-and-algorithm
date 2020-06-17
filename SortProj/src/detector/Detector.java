@@ -24,6 +24,8 @@ public class Detector {
                 MergeSort.mergeSort(arr1);
             }else if(s.equals("quickSort2")){
                 QuickSort.quickSort2(arr1);
+            }else if(s.equals("heapSort")){
+                HeapSort.heapSort(arr1);
             }
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
